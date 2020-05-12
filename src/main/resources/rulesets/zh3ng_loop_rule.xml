@@ -21,4 +21,14 @@
 ]]>
         </example>
     </rule>
+
+
+    <rule name="ParameterCommaRule"
+            message="方法参数之间逗号之后要留一个空格"
+            class="com.zh3ng.club.pmd.custom.ParameterCommaRule">
+        <description>
+            方法的多参数之间，逗号之后要留一个空格
+        </description>
+        <priority>1</priority>
+    </rule>
 </ruleset>
