@@ -8,6 +8,7 @@
           language="java"
           message="java.oop.EqualsAvoidNullRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.oop.EqualsAvoidNullRule">
+        <!---->
         <priority>2</priority>
 
         <example>

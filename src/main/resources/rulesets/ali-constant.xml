@@ -9,6 +9,7 @@
         message="java.constant.UpperEllRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.constant.UpperEllRule">
         <priority>1</priority>
+        <!--UpperEll规则-->
         <example>
       <![CDATA[
 Negative example:
@@ -28,6 +29,7 @@ Positive example:
         message="java.constant.UndefineMagicConstantRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.constant.UndefineMagicConstantRule">
         <priority>3</priority>
+        <!--未定义的魔数常量规则-->
 
         <example>
         <![CDATA[    

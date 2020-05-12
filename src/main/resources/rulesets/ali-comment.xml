@@ -8,6 +8,7 @@
     <rule name="CommentsMustBeJavadocFormatRule" message="java.comment.CommentsMustBeJavadocFormatRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.comment.CommentsMustBeJavadocFormatRule">
         <description>java.comment.CommentsMustBeJavadocFormatRule.rule.desc</description>
+        <!--注释必须要符合javadoc格式-->
         <priority>3</priority>
 
         <example>
@@ -47,6 +48,7 @@
         message="java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule">
         <description>java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.rule.desc</description>
+        <!--抽象方法或接口方法必须加javadoc-->
         <priority>3</priority>
 
         <example>
@@ -67,6 +69,7 @@
     <rule name="ClassMustHaveAuthorRule" message="java.comment.ClassMustHaveAuthorRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.comment.ClassMustHaveAuthorRule">
         <description>java.comment.ClassMustHaveAuthorRule.rule.desc</description>
+        <!--类必须有作者注释-->
         <priority>3</priority>
 
         <example>
@@ -85,6 +88,7 @@
 
     <rule name="EnumConstantsMustHaveCommentRule" message="java.comment.EnumConstantsMustHaveCommentRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.comment.EnumConstantsMustHaveCommentRule">
+        <!--enum 常量必须有注释-->
         <priority>2</priority>
 
         <example>
@@ -116,6 +120,7 @@
     <rule name="AvoidCommentBehindStatementRule"
         message="java.comment.AvoidCommentBehindStatementRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.comment.AvoidCommentBehindStatementRule">
+        <!--避免注释在statement之后-->
         <priority>3</priority>
 
         <example>
@@ -137,6 +142,7 @@
           message="java.comment.RemoveCommentedCodeRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.comment.RemoveCommentedCodeRule">
         <description>java.comment.RemoveCommentedCodeRule.rule.desc</description>
+        <!--删除注释代码-->
         <priority>3</priority>
         <example>
 <![CDATA[

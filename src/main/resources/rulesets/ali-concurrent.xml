@@ -10,6 +10,7 @@
           message="java.concurrent.ThreadPoolCreationRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.ThreadPoolCreationRule">
         <description>java.concurrent.ThreadPoolCreationRule.rule.desc</description>
+        <!--创建线程池的规矩-->
         <priority>1</priority>
         <example>
             <![CDATA[
@@ -59,6 +60,7 @@ Positive example 3：
           message="java.concurrent.AvoidUseTimerRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidUseTimerRule">
         <priority>1</priority>
+        <!--避免使用Timer规则-->
         <example>
             <![CDATA[
     //org.apache.commons.lang3.concurrent.BasicThreadFactory
@@ -80,6 +82,7 @@ Positive example 3：
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidManuallyCreateThreadRule">
         <description>java.concurrent.AvoidManuallyCreateThreadRule.rule.desc</description>
+        <!--避免手动创建线程-->
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -101,6 +104,7 @@ Positive example 3：
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.ThreadShouldSetNameRule">
         <priority>2</priority>
+        <!--线程应该设置名字-->
         <example>
             <![CDATA[
     ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
@@ -131,6 +135,7 @@ Positive example 3：
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidCallStaticSimpleDateFormatRule">
         <description>java.concurrent.AvoidCallStaticSimpleDateFormatRule.rule.desc</description>
+        <!--调用静态的 datafomate 规则-->
 
         <example>
             <![CDATA[
@@ -175,6 +180,7 @@ Positive example 3：
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.ThreadLocalShouldRemoveRule">
         <priority>2</priority>
+        <!--ThreadLocal 应该记得移除-->
         <example>
             <![CDATA[
     /**
@@ -225,6 +231,7 @@ Positive example 3：
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidConcurrentCompetitionRandomRule">
         <priority>3</priority>
+        <!--避免并发竞争Random规则-->
         <example>
             <![CDATA[
 Positive example 1：
@@ -268,6 +275,7 @@ Positive example 2：
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.CountDownShouldInFinallyRule">
         <description>java.concurrent.CountDownShouldInFinallyRule.rule.desc</description>
         <priority>3</priority>
+        <!--countDown类应该 在finally块里调用countDown-->
         <example>
             <![CDATA[
     /**

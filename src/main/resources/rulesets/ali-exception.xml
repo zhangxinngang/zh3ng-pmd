@@ -10,6 +10,7 @@
           message="java.exception.MethodReturnWrapperTypeRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.exception.MethodReturnWrapperTypeRule">
         <priority>3</priority>
+        <!--返回类型为基本数据类型【int】，return包装数据类型的对象【Integer】时，自动拆箱有可能产生NPE-->
         <example>
             <![CDATA[
     public int method() {
@@ -25,6 +26,7 @@
           message="java.exception.AvoidReturnInFinallyRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.exception.AvoidReturnInFinallyRule">
         <priority>2</priority>
+        <!--避免在Finally快里做返回-->
         <example>
             <![CDATA[
 Negative example:
@@ -51,6 +53,7 @@ Negative example:
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.exception.TransactionMustHaveRollbackRule">
         <priority>3</priority>
+        <!--事务必须有rollback 规则-->
         <example>
             <![CDATA[
 Positive example 1：

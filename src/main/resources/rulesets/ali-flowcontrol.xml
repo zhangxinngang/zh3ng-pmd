@@ -9,6 +9,7 @@
           message="java.flowcontrol.SwitchStatementRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.flowcontrol.SwitchStatementRule">
         <priority>2</priority>
+        <!--switch 陈述的规则 要有default-->
 
         <example>
             <![CDATA[
@@ -28,6 +29,7 @@
           message="java.flowcontrol.NeedBraceRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.flowcontrol.NeedBraceRule">
         <priority>1</priority>
+        <!--单行的条件判断 包括while 要加{}-->
 
         <example>
             <![CDATA[
@@ -43,6 +45,7 @@
           message="java.flowcontrol.AvoidComplexConditionRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.flowcontrol.AvoidComplexConditionRule">
         <description>java.flowcontrol.AvoidComplexConditionRule.rule.desc</description>
+        <!--条件判断里，避免负责的条件组合-->
         <priority>3</priority>
 
         <example>
@@ -69,6 +72,7 @@ Positive example:
           message="java.flowcontrol.AvoidNegationOperatorRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.flowcontrol.AvoidNegationOperatorRule">
         <description>java.flowcontrol.AvoidNegationOperatorRule.rule.desc</description>
+        <!--避免负向操作-->
         <priority>3</priority>
 
         <example>
