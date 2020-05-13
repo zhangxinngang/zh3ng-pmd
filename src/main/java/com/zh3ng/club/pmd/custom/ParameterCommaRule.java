@@ -25,10 +25,10 @@ public class ParameterCommaRule extends AbstractJavaRule {
                     ASTFormalParameter parameter = parameters.get(i);
                     ASTFormalParameter parameterBehind = parameters.get(i+1);
                     RuleContext ruleContext = (RuleContext)data;
-                    System.out.println(ruleContext.getSourceCodeFilename() +" "+ node.getBeginLine()+ "  former" +parameter.getEndColumn()+ " later"+parameterBehind.getBeginColumn());
-                    if (parameterBehind.getBeginColumn() - parameter.getEndColumn() != 2
+                    if (parameterBehind.getBeginColumn() - parameter.getEndColumn() != 3
                             && parameterBehind.getBeginLine()==parameter.getEndLine()){
-                        System.out
+                        String message = ruleContext.getSourceCodeFilename() +" "+ node.getBeginLine()+" 方法的定义-参数之间逗号分隔，逗号之后加一个空格";
+                        this.addViolation(data,node,message);
                     }
                 }
             }
