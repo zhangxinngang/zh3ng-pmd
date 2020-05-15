@@ -20,13 +20,13 @@ public class WhileLoopTest {
 
     @Test
     public void testParameterCommaRule(){
-        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R","rulesets/zh3ng_loop_rule.xml"};
+        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng_parameter_rules.xml"};
         Main.main(args);
     }
 
     @Test
     public void testParameterCommaRule1(){
-        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R","rulesets/zh3ng_loop_rule.xml"};
+        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng_parameter_rules.xml"};
         Main.main(args);
     }
 }

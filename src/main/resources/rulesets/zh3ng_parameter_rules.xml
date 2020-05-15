@@ -4,28 +4,9 @@
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
-    <rule name="WhileLoopsMustUseBracesRule"
-          message="避免使用'while'是不带大括号"
-          class="com.zh3ng.club.pmd.custom.WhileLoopsRule">
-        <description>
-            Avoid using 'while' statements without using curly braces  by zh3ng
-        </description>
-        <priority>3</priority>
-
-        <example>
-            <![CDATA[
-    public void doSomething() {
-      while (true)
-          x++;
-    }
-]]>
-        </example>
-    </rule>
-
-
     <rule name="ParameterCommaRule"
             message="方法的定义时，多个参数逗号后边必须加空格。"
-            class="com.zh3ng.club.pmd.custom.ParameterCommaRule">
+            class="com.zh3ng.club.pmd.custom.parameter.ParameterCommaRule">
         <description>
             方法定义时的多参数之间，逗号之后要留一个空格
         </description>
@@ -41,7 +22,7 @@
 
     <rule name="ParameterPutInCommaRule"
           message="方法调用时，多个参数逗号后边必须加空格。"
-          class="com.zh3ng.club.pmd.custom.ParameterPutInCommaRule">
+          class="com.zh3ng.club.pmd.custom.parameter.ParameterPutInCommaRule">
         <description>
             方法调用时的多参数之间，逗号之后要留一个空格
         </description>

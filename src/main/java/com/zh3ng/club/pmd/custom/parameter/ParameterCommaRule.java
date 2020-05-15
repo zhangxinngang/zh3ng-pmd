@@ -1,4 +1,4 @@
-package com.zh3ng.club.pmd.custom;
+package com.zh3ng.club.pmd.custom.parameter;
 
 import net.sourceforge.pmd.RuleContext;
 import net.sourceforge.pmd.lang.java.ast.*;
