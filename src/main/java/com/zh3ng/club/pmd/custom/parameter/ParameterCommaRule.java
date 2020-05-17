@@ -9,6 +9,8 @@ import java.util.List;
 /**
  * @author zhangxingang
  * @created on 2020-05-12
+ *
+ * 方法的定义 参数之间逗号后要加一个空格
  */
 public class ParameterCommaRule extends AbstractJavaRule {
     @Override
@@ -28,12 +30,12 @@ public class ParameterCommaRule extends AbstractJavaRule {
                     if (parameterBehind.getBeginColumn() - parameter.getEndColumn() != 3
                             && parameterBehind.getBeginLine()==parameter.getEndLine()){
                         String message = ruleContext.getSourceCodeFilename() +" "+ node.getBeginLine()+" 方法的定义-参数之间逗号分隔，逗号之后加一个空格";
-                        this.addViolation(data,node,message);
+                        this.addViolation(data, node, message);
                     }
                 }
             }
         }
-        return super.visit(node,data);
+        return super.visit(node, data);
     }
 
 }
