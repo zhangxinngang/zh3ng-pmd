@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import com.zh3ng.club.pmd.custom.Main;
 import org.junit.Test;
->>>>>>> master
 
 /**
  * @author zhangxingang
@@ -21,11 +18,6 @@ public class WhileLoopTest {
         }
     }
 
-<<<<<<< HEAD
-    public int hahaha(int a,boolean flag){
-        String[] b = new String[1];
-        return -1;
-=======
     @Test
     public void testParameterCommaRule(){
         String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng_parameter_rules.xml"};
@@ -36,6 +28,5 @@ public class WhileLoopTest {
     public void testParameterCommaRule1(){
         String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng_parameter_rules.xml"};
         Main.main(args);
->>>>>>> master
     }
 }
