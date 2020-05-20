@@ -8,29 +8,23 @@
             message="方法的定义时，多个参数逗号后边必须加空格。"
             class="com.zh3ng.club.pmd.custom.rules.parameter.ParameterCommaRule">
         <description>
-            方法定义时的多参数之间，逗号之后要留一个空格
+            1.方法定义时的多参数之间，逗号之后要留一个空格
+            2.方法调用时的多参数之间，逗号之后要留一个空格
         </description>
         <priority>1</priority>
         <example>
             <![CDATA[
+            1.
             public void method(Integer a, String b, Long c){
                 ///.....
             }
 			]]>
-        </example>
-    </rule>
 
-    <rule name="ParameterPutInCommaRule"
-          message="方法调用时，多个参数逗号后边必须加空格。"
-          class="com.zh3ng.club.pmd.custom.rules.parameter.ParameterCommaRule">
-        <description>
-            方法调用时的多参数之间，逗号之后要留一个空格
-        </description>
-        <priority>1</priority>
-        <example>
             <![CDATA[
+            2.
             method(a, b, c);
 			]]>
         </example>
     </rule>
+
 </ruleset>
