@@ -8,7 +8,7 @@
           language="java"
           message="java.oop.EqualsAvoidNullRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.oop.EqualsAvoidNullRule">
-        <!---->
+        <!--equals 方法的调用要避免 null对象，用确定不为null的对象调用equals-->
         <priority>2</priority>
 
         <example>
@@ -27,6 +27,7 @@
           language="java"
           message="java.oop.WrapperTypeEqualityRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.oop.WrapperTypeEqualityRule">
+        <!-- 包装类的相等，用equals-->
         <description>java.oop.WrapperTypeEqualityRule.rule.desc</description>
         <priority>1</priority>
 
