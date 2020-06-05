@@ -12,7 +12,7 @@ public class WhileLoopTest {
     /**
      * 自己在该目录下 写点.java 文件用于测试规则检测
      */
-    private static String DEFAULT_TEST_JAVA_FILE_PATH = "src/test";
+    private static String DEFAULT_TEST_JAVA_FILE_PATH = "src/test/resources/testjavafiles";
 
     public static void main(String[] args) {
     }
@@ -28,6 +28,12 @@ public class WhileLoopTest {
     @Test
     public void testParameterCommaRule1(){
         String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng-parameter-rules.xml"};
+        Main.main(args);
+    }
+
+    @Test
+    public void testBlockRule(){
+        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/ali-flowcontrol.xml"};
         Main.main(args);
     }
 }

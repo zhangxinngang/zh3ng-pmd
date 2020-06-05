@@ -94,4 +94,22 @@ Positive example:
 			]]>
         </example>
     </rule>
+
+    <rule name="BlockRule"
+          language="java"
+          class="com.zh3ng.club.pmd.custom.rules.flowcontrol.BlockRule">
+        <priority>2</priority>
+        <!--大括号的规则  左大括号前不换行，左大括号后换行，右大括号前换行，右大括号后还有else等代码则不换行;表示终止的右大括号后必须换行-->
+
+        <example>
+            <![CDATA[
+            if (0 == 1) {
+
+            } else {
+
+            }
+
+			]]>
+        </example>
+    </rule>
 </ruleset>
