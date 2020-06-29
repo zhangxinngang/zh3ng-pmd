@@ -30,4 +30,11 @@ public class WhileLoopTest {
         String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/zh3ng-parameter-rules.xml"};
         Main.main(args);
     }
+
+    @Test
+    public void testNamingRule(){
+        String[] args = new String[]{"-d",DEFAULT_TEST_JAVA_FILE_PATH,"-R", "rulesets/ali-naming.xml"};
+        Main.main(args);
+    }
+
 }

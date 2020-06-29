@@ -31,13 +31,13 @@ for example:
 
 ```$xslt
 for example:
--d ./src/test/java/WhileLoopTest.java
+-d ./src/test/java/WhileLoopTest.java, TTTssTest.java
 ```
 
 * -R  : the checking rules. It is the *-rule.xml in resource/rulesets/* 。
 ```
 for example:
-for example: -R rulesets/zh3ng_loop_rule.xml,rulesets/some_rule.xml,...
+for example: -R rulesets/zh3ng_loop_rule.xml,rulesets/some_rule.xml,xxx.xml...
 ```  
 
 

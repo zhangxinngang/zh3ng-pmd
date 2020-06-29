@@ -1,5 +1,6 @@
 package com.zh3ng.club.pmd.custom;
 
+import com.zh3ng.club.pmd.custom.version.VersionManager;
 import net.sourceforge.pmd.PMD;
 
 /**
@@ -9,6 +10,7 @@ import net.sourceforge.pmd.PMD;
 public class Main {
     public static void main(String[] args) {
         showSlogon();
+        showVersion();
         PMD.main(args);
     }
 
@@ -26,5 +28,13 @@ public class Main {
                         "                                                                           "
 
         );
+    }
+
+    private static void showVersion(){
+        VersionManager versionManager = new VersionManager();
+
+        String version = versionManager.getVersion();
+
+        System.out.println("version:"+version);
     }
 }

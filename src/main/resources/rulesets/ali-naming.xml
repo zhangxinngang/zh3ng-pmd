@@ -9,7 +9,7 @@
           language="java"
           since="1.6"
           message="java.naming.ClassNamingShouldBeCamelRule.rule.msg"
-          class="com.alibaba.p3c.pmd.lang.java.rule.naming.ClassNamingShouldBeCamelRule">
+          class="com.zh3ng.club.pmd.custom.rules.naming.ClassNamingShouldBeCamelRule">
         <!--类命名应该符合驼峰命名-->
         <priority>3</priority>
     </rule>
@@ -67,7 +67,7 @@
           language="java"
           since="1.6"
           message="java.naming.LowerCamelCaseVariableNamingRule.rule.msg"
-          class="com.alibaba.p3c.pmd.lang.java.rule.naming.LowerCamelCaseVariableNamingRule">
+          class="com.zh3ng.club.pmd.custom.rules.naming.LowerCamelCaseVariableNamingRule">
         <!--小写驼峰变量命名规则-->
         <priority>2</priority>
     </rule>
